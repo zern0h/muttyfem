@@ -1,0 +1,95 @@
+
+
+::selection{
+    background-color: #ee5253;
+}
+.tabbed{
+    width: 700px;
+    margin: 50px auto;
+}
+
+.tabbed > input{
+    display: none;
+}
+
+.tabbed > label{
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.tabbed > label:hover,
+.tabbed > input:checked + id +label{
+    background-color: #ee5253;
+}
+
+.tabs{
+    clear: both;
+    perspective: 600px;
+}
+
+.tabs > div{
+    width: 700px;
+    position: absolute;
+    border : 2px solid #ee5253;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    z-index: 0;
+    transform: rotateX(20deg);
+    transform-origin: top center;
+    transition: opacity 0.3s, transform 1s;
+}
+
+#tab_one:checked ~ .tabs > div:nth-of-type(1),
+#tab_two:checked ~ .tabs > div:nth-of-type(2),
+#tab_three:checked ~ .tabs > div:nth-of-type(3),
+#tab_four:checked ~ .tabs > div:nth-of-type(4){
+    transform: rotateX(0deg);
+    opacity: 1;
+    z-index: 1;
+}
+.tabs h2{
+    color: #ee5253;
+}
+
+.year-select{
+    width: 250px;
+    margin: 10px 20px;
+    background: #ee5253; 
+}
+
+.year-select select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #ee5253;
+    background-image: none;
+    flex: 1;
+    padding: 0.5em;
+    color: var(--light-background);
+    cursor: pointer;
+}
+.inst h3{
+    margin: 30px;
+    color: #e63c2c;
+}
+.instruction{
+    list-style-type: none;
+}
+.instruction li{
+    margin: 20px;
+    font-size: 18px;
+}
+.instruction li span{
+    font-size: 20px;
+    color:#ee5253;
+}
