@@ -103,7 +103,7 @@ All queries use **PDO prepared statements** throughout.
 
 ### Database Schema (ERD)
 
-![ERD](ERD.png)
+![ERD](screenshot/ERD.png)
 
 ---
 
