@@ -94,7 +94,7 @@
            let btn_action = 'fetch_product';
            let product_number = $(this).val();
            $.ajax({
-                url:"article_doc_list_action.php",
+                url:"actions/article_doc_list_action.php",
                 method:"POST",
                 data:{product_number:product_number,btn_action:btn_action},
                 success:function(data)

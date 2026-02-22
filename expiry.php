@@ -205,7 +205,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"expiry_action.php",
+                    url:"actions/expiry_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -234,7 +234,7 @@
             let  btn_action = 'load_inventory_details';
             if(product_id != '' && invoice_id != ''){
                 $.ajax({
-                    url: "expiry_action.php",
+                    url: "actions/expiry_action.php",
                     method: "POST",
                     data:{btn_action:btn_action, product_id:product_id, invoice_id:invoice_id},
                     dataType: "JSON",
@@ -283,7 +283,7 @@
                 }
                 else{    
                     $.ajax({
-                        url:"expiry_action.php",
+                        url:"actions/expiry_action.php",
                         method:"POST",
                         data:form_data,
                         dataType:"JSON",
@@ -326,7 +326,7 @@
             let refund_id = $(this).attr("id");
             let btn_action = 'refund_details';
             $.ajax({
-                url:"expiry_action.php",
+                url:"actions/expiry_action.php",
                 method:"POST",
                 data:{refund_id:refund_id, btn_action:btn_action},
                 success:function(data)

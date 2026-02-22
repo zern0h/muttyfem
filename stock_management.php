@@ -192,7 +192,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"stock_management_action.php",
+                    url:"actions/stock_management_action.php",
                     type:"POST",
                     data:{user_id:user_id, btn_action:btn_action}
                 },
@@ -281,7 +281,7 @@
            let btn_action = 'fetch_product';
            let product_number = $('#product').val();
            $.ajax({
-                url:"stock_management_action.php",
+                url:"actions/stock_management_action.php",
                 method:"POST",
                 data:{product_number:product_number,btn_action:btn_action},
                 dataType: "JSON",
@@ -302,7 +302,7 @@
             
             form_data = $("#checkOutForm").serialize(); 
 			$.ajax({
-				url:"stock_management_action.php",
+				url:"actions/stock_management_action.php",
 				method:"POST",
 				data:form_data,
                 dataType:"JSON",

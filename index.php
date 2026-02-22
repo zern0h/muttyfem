@@ -216,7 +216,7 @@
             let  btn_action = 'check suppliers';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.suppliers h3').html(data); 
@@ -229,7 +229,7 @@
             let  btn_action = 'check products';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.products h3').html(data); 
@@ -242,7 +242,7 @@
             let  btn_action = 'check categories';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.categories h3').html(data); 
@@ -255,7 +255,7 @@
             let  btn_action = 'check sub_categories';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.sub-categories h3').html(data); 
@@ -268,7 +268,7 @@
             let  btn_action = 'check total transaction';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.sales h3').html(data); 
@@ -281,7 +281,7 @@
             let  btn_action = 'check daily sales';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.daily-sales h3').html(data); 
@@ -294,7 +294,7 @@
             let  btn_action = 'check monthly sales';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.monthly-sales h3').html(data); 
@@ -307,7 +307,7 @@
             let  btn_action = 'check total pod';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.total-pod h3').html(data); 
@@ -320,7 +320,7 @@
             let  btn_action = 'check total paid delivery';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.total-paid-delivery h3').html(data); 
@@ -333,7 +333,7 @@
             let  btn_action = 'check outstanding';
             $.ajax({
                  method: "POST",
-                 url: "dashboard_action.php",
+                 url: "actions/dashboard_action.php",
                  data: {btn_action:btn_action},
                  success:function(data){
                     $('.outstanding h3').html(data); 
@@ -345,7 +345,7 @@
             let btn_action = 'get pod';
             $.ajax({
                 method: "POST",
-                url: "dashboard_action.php",
+                url: "actions/dashboard_action.php",
                 data:{btn_action:btn_action},
                 success:function(data){
                     
@@ -359,7 +359,7 @@
             let btn_action = 'get sales';
             $.ajax({
                 method: "POST",
-                url: "dashboard_action.php",
+                url: "actions/dashboard_action.php",
                 data:{btn_action:btn_action},
                 success:function(data){
             

@@ -144,7 +144,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"user_action.php",
+                    url:"actions/user_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -192,7 +192,7 @@
                 
                 else{
                     $.ajax({
-                        url:"user_action.php",
+                        url:"actions/user_action.php",
                         method:"POST",
                         data:{name:name, email:email, password:password, user_role:user_role, user_id:user_id, btn_action:btn_action},
                         dataType:"json",
@@ -224,7 +224,7 @@
                 }
                 else{
                     $.ajax({
-                        url:"user_action.php",
+                        url:"actions/user_action.php",
                         method:"POST",
                         data:{name:name, email:email, password:password, user_role:user_role, user_id:user_id, btn_action:btn_action},
                         dataType:"json",
@@ -257,7 +257,7 @@
             let user_id = $(this).attr("id");
             let btn_action = 'fetch_single';
             $.ajax({
-                url:"user_action.php",
+                url:"actions/user_action.php",
                 method:"POST",
                 data:{user_id:user_id, btn_action:btn_action},
                 dataType:"json",
@@ -293,7 +293,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"user_action.php",
+                        url:"actions/user_action.php",
                         method:"POST",
                         data:{user_id:user_id, user_status:user_status, btn_action:btn_action},
                         dataType: "JSON",

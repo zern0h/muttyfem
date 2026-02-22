@@ -1,6 +1,6 @@
 <?php
-include 'includes/DB.php';
-include 'includes/Query.php';
+include '../includes/DB.php';
+include '../includes/Query.php';
 require_once '../dompdf/autoload.inc.php';
 // reference the Dompdf namespace
 use Dompdf\Dompdf;

@@ -120,7 +120,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"brand_action.php",
+                    url:"actions/brand_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -159,7 +159,7 @@
                 $('#action').attr('disabled', false);
             }else{
                 $.ajax({
-                    url:"brand_action.php",
+                    url:"actions/brand_action.php",
                     method:"POST",
                     data:{brand_name:brand_name, brand_id:brand_id, btn_action:btn_action},
                     dataType:"json",
@@ -193,7 +193,7 @@
             let btn_action = 'fetch_single';
             
             $.ajax({
-                url:"brand_action.php",
+                url:"actions/brand_action.php",
                 method:"POST",
                 data:{brand_id:brand_id, btn_action:btn_action},
                 dataType:"json",
@@ -222,7 +222,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"brand_action.php",
+                        url:"actions/brand_action.php",
                         method:"POST",
                         data:{brand_id:brand_id, brand_status:brand_status, btn_action:btn_action},
                         dataType: "JSON",

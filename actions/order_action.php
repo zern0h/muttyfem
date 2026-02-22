@@ -1,6 +1,6 @@
 <?php
-include 'includes/DB.php';
-include 'includes/Query.php';
+include '../includes/DB.php';
+include '../includes/Query.php';
 require_once '../dompdf/autoload.inc.php';
 // reference the Dompdf namespace
 use Dompdf\Dompdf;
@@ -143,7 +143,7 @@ if(isset($_POST['btn_action']))
         $sub_array[] = $Qobject->date_string($row['inventory_order_created_date']);
         $sub_array[] = $status;
 
-        $sub_array[] = '<a href="printOrderPDF.php?invoiceNum='.$row["inventory_overview_id"].'" target="_blank" class="btn btn-info ">PDF <i class="fas fa-file-pdf"></a>';
+        $sub_array[] = '<a href="../printOrderPDF.php?invoiceNum='.$row["inventory_overview_id"].'" target="_blank" class="btn btn-info ">PDF <i class="fas fa-file-pdf"></a>';
         $sub_array[] = '<button name="view" id="'.$row["inventory_overview_id"].'" class="btn btn-xsx btn-warning view" >view <i class="fas fa-eye"></i></button>';
     
     	$data[] = $sub_array;

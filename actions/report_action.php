@@ -1,7 +1,7 @@
 
 <?php
-include 'includes/DB.php';
-include 'includes/Query.php';
+include '../includes/DB.php';
+include '../includes/Query.php';
 require('../fpdf/fpdf.php');
 
 $Qobject = new Query;

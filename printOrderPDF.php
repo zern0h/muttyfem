@@ -4,7 +4,7 @@ include 'includes/DB.php';
 include 'includes/Query.php';
 $Qobject = new Query;
 
-require('../fpdf/fpdf.php');
+require('fpdf/fpdf.php');
 //A4 width: 219mm
 //default margin: 10mm on eachside
 //writable horizontal: '219 - (10*2) = 189mm

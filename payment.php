@@ -172,7 +172,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"pod_action.php",
+                    url:"actions/pod_action.php",
                     type:"POST",
                     data:{btn_action:btn_action,pay:pay}
                 },
@@ -198,7 +198,7 @@
             let pod_id = $(this).attr("id");           
             let btn_action = 'proof_of_delivery_details';
             $.ajax({
-                url:"pod_action.php",
+                url:"actions/pod_action.php",
                 method:"POST",
                 data:{pod_id:pod_id, btn_action:btn_action},
                 success:function(data)
@@ -214,7 +214,7 @@
             let pod_id = $(this).attr("id"); 
             let btn_action = 'pay';
             $.ajax({
-                url:"pod_action.php",
+                url:"actions/pod_action.php",
 				method:"POST",
 				data:{pod_id:pod_id,btn_action:btn_action},
                 dataType:"JSON",
@@ -239,7 +239,7 @@
             let total = $('#total').val();
             let btn_action = $('#btn_action').val();
 			$.ajax({
-				url:"pod_action.php",
+				url:"actions/pod_action.php",
 				method:"POST",
 				data:{purchase_pamyment:purchase_pamyment,pod_id:pod_id,payment_made:payment_made,total:total,btn_action:btn_action},
                 dataType:"JSON",

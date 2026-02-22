@@ -111,7 +111,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"pos_action.php",
+                    url:"actions/pos_action.php",
                     type:"POST",
                     data:{user_id:user_id, btn_action:btn_action}
                 },
@@ -130,7 +130,7 @@
             let product_id = $(this).attr("id");           
             let btn_action = 'invoice_details';
             $.ajax({
-                url:"pos_action.php",
+                url:"actions/pos_action.php",
                 method:"POST",
                 data:{product_id:product_id, btn_action:btn_action},
                 success:function(data)

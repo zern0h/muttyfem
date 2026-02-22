@@ -262,7 +262,7 @@
            let btn_action = 'fetch_product';
            let product_number = $(this).val();
            $.ajax({
-                url:"hamper_creation_action.php",
+                url:"actions/hamper_creation_action.php",
                 method:"POST",
                 data:{product_number:product_number,btn_action:btn_action},
                 dataType: "JSON",
@@ -281,7 +281,7 @@
             let btn_action = 'fetch_by_barcode';
             let product_number = $('#barcode_scan').val();
             $.ajax({
-                url:"hamper_creation_action.php",
+                url:"actions/hamper_creation_action.php",
                 method:"POST",
                 data:{product_number:product_number,btn_action:btn_action},
                 dataType: "JSON",
@@ -321,7 +321,7 @@
                 });   
             }else{
                 $.ajax({
-                    url:"hamper_creation_action.php",
+                    url:"actions/hamper_creation_action.php",
                     method:"POST",
                     data:form_data,
                     dataType:"JSON",

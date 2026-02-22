@@ -204,7 +204,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"pod_action.php",
+                    url:"actions/pod_action.php",
                     type:"POST",
                     data:{btn_action:btn_action, pay:pay}
                 },
@@ -253,7 +253,7 @@
             let pod_id = $(this).attr("id");           
             let btn_action = 'proof_of_delivery_details';
             $.ajax({
-                url:"pod_action.php",
+                url:"actions/pod_action.php",
                 method:"POST",
                 data:{pod_id:pod_id, btn_action:btn_action},
                 success:function(data)
@@ -270,7 +270,7 @@
 			$('#action').attr('disabled', 'disabled');
 			var form_data = $(this).serialize();
 			$.ajax({
-				url:"pod_action.php",
+				url:"actions/pod_action.php",
 				method:"POST",
 				data:form_data,
                 dataType:"JSON",
@@ -303,7 +303,7 @@
         function fetchPurchaseOrderProduct(poNum){
             let btn_action = 'fetch_P_Order_Products';
             $.ajax({
-                url: "pod_action.php",
+                url: "actions/pod_action.php",
                 method: "POST",
                 data: {poNum:poNum,btn_action:btn_action},
                 success:function(data){

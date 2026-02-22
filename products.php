@@ -236,7 +236,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"product_action.php",
+                    url:"actions/product_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -272,7 +272,7 @@
             let cat_id = $('#category').val();
             let  btn_action = 'load_sub_cat';
             $.ajax({
-                url: "product_action.php",
+                url: "actions/product_action.php",
                 method: "POST",
                 data:{btn_action:btn_action, cat_id:cat_id},
                 success:function(data){
@@ -289,7 +289,7 @@
             let form_data = $('#productForm').serialize();
         
             $.ajax({
-                url:"product_action.php",
+                url:"actions/product_action.php",
                 method:"POST",
                 data: form_data,
                 dataType:"JSON",
@@ -321,7 +321,7 @@
             let btn_action = 'fetch_single';
             $('#action').attr('disabled', false);
             $.ajax({
-                url:"product_action.php",
+                url:"actions/product_action.php",
                 method:"POST",
                 data:{product_id:product_id, btn_action:btn_action},
                 dataType:"json",
@@ -376,7 +376,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"product_action.php",
+                        url:"actions/product_action.php",
                         method:"POST",
                         data:{product_id:product_id, product_status:product_status, btn_action:btn_action},
                         dataType: "JSON",
@@ -406,7 +406,7 @@
             let product_id = $(this).attr("id");
             let btn_action = 'product_details';
             $.ajax({
-                url:"product_action.php",
+                url:"actions/product_action.php",
                 method:"POST",
                 data:{product_id:product_id, btn_action:btn_action},
                 success:function(data)

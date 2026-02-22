@@ -130,7 +130,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"procurement_action.php",
+                    url:"actions/procurement_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -160,7 +160,7 @@
             }
             else{  
                 $.ajax({
-                    url:"procurement_action.php",
+                    url:"actions/procurement_action.php",
                     method:"POST",
                     data:{procurement:procurement, amount:amount, description:description, btn_action:btn_action},
                     dataType:"JSON",
@@ -201,7 +201,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"procurement_action.php",
+                        url:"actions/procurement_action.php",
                         method:"POST",
                         data:{procurement_id:procurement_id, procurement_status:procurement_status, btn_action:btn_action},
                         dataType: "JSON",

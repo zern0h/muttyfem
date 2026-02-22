@@ -1,6 +1,6 @@
 <?php
-include 'includes/DB.php';
-include 'includes/Query.php';
+include '../includes/DB.php';
+include '../includes/Query.php';
 
 $Qobject = new Query;
 
@@ -290,7 +290,7 @@ if(isset($_POST['btn_action']))
 
   //Generate Barcode
   if($_POST['btn_action'] == 'barcode'){
-      include 'includes/barcode128.php';
+      include '../includes/barcode128.php';
      
       $product_id = $_POST['barcode'];
       $rate = $_POST['price'];
@@ -390,7 +390,7 @@ if(isset($_POST['btn_action']))
       $sub_array[] = $status;
 
       $sub_array[] = '<button name="update" id="'.$row["product_id"].'" class="btn btn-xs btn-success view" >View <i class="fas fa-eye"></i></button>';
-      $sub_array[] = '<a href="sticker.php?prodNum=' . $row["product_barcode"] .'" target="_blank" class="btn btn-primary ">Barcode <i class="fas fa-barcode"></a>';
+      $sub_array[] = '<a href="../sticker.php?prodNum=' . $row["product_barcode"] .'" target="_blank" class="btn btn-primary ">Barcode <i class="fas fa-barcode"></a>';
 
    
       $sub_array[] = '<button name="update" id="'.$row["product_id"].'" class="btn btn-xs btn-warning update" >Update <i class="fas fa-pen"></i></button>';

@@ -128,7 +128,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"categories_action.php",
+                    url:"actions/categories_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -164,7 +164,7 @@
                 $('#action').attr('disabled', false);
             }else{
                 $.ajax({
-                    url:"categories_action.php",
+                    url:"actions/categories_action.php",
                     method:"POST",
                     data:{cat_name:cat_name, cat_id:cat_id, btn_action:btn_action},
                     dataType:"json",
@@ -196,7 +196,7 @@
             let cat_id = $(this).attr("id");
             let btn_action = 'fetch_single';
             $.ajax({
-                url:"categories_action.php",
+                url:"actions/categories_action.php",
                 method:"POST",
                 data:{cat_id:cat_id, btn_action:btn_action},
                 dataType:"json",
@@ -225,7 +225,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"categories_action.php",
+                        url:"actions/categories_action.php",
                         method:"POST",
                         data:{cat_id:cat_id, cat_status:cat_status, btn_action:btn_action},
                         dataType: "JSON",

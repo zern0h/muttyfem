@@ -220,7 +220,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"refund_action.php",
+                    url:"actions/refund_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -247,7 +247,7 @@
             let  btn_action = 'load_inventory_total';
             if(invoice_id != ''){
                 $.ajax({
-                    url: "refund_action.php",
+                    url: "actions/refund_action.php",
                     method: "POST",
                     data:{btn_action:btn_action, invoice_id:invoice_id},
                     dataType: "JSON",
@@ -268,7 +268,7 @@
             let  btn_action = 'load_inventory_details';
             if(product_id != '' && invoice_id != ''){
                 $.ajax({
-                    url: "refund_action.php",
+                    url: "actions/refund_action.php",
                     method: "POST",
                     data:{btn_action:btn_action, product_id:product_id, invoice_id:invoice_id},
                     dataType: "JSON",
@@ -318,7 +318,7 @@
                 }
                 else{    
                     $.ajax({
-                        url:"refund_action.php",
+                        url:"actions/refund_action.php",
                         method:"POST",
                         data:form_data,
                         dataType:"JSON",
@@ -369,7 +369,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"refund_action.php",
+                        url:"actions/refund_action.php",
                         method:"POST",
                         data:{refund_number:refund_number, refund_status:refund_status, btn_action:btn_action},
                         dataType: "JSON",
@@ -399,7 +399,7 @@
             let refund_id = $(this).attr("id");
             let btn_action = 'refund_details';
             $.ajax({
-                url:"refund_action.php",
+                url:"actions/refund_action.php",
                 method:"POST",
                 data:{refund_id:refund_id, btn_action:btn_action},
                 success:function(data)

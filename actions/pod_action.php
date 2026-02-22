@@ -1,6 +1,6 @@
 <?php
-include 'includes/DB.php';
-include 'includes/Query.php';
+include '../includes/DB.php';
+include '../includes/Query.php';
 
 $Qobject = new Query;
 
@@ -466,7 +466,7 @@ if(isset($_POST['btn_action']))
       if($_POST['pay'] == 'payment'){
         $sub_array[] = '<button name="pay" id="'.$row["pod_overview_id"].'" class="btn btn-xs btn-warning pay" >PAY <i class="fas fa-dollar-sign"></i></button>';
       }
-      $sub_array[] = '<a href="printProofOfDelivery.php?podNum='.$row["pod_overview_id"].'" target="_blank" class="btn btn-info ">PDF <i class="fas fa-file-pdf"></a>';
+      $sub_array[] = '<a href="../printProofOfDelivery.php?podNum='.$row["pod_overview_id"].'" target="_blank" class="btn btn-info ">PDF <i class="fas fa-file-pdf"></a>';
       
          	
     	$data[] = $sub_array;

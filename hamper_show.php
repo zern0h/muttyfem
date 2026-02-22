@@ -122,7 +122,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"hamper_creation_action.php",
+                    url:"actions/hamper_creation_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -141,7 +141,7 @@
             let hamper_id = $(this).attr("id");           
             let btn_action = 'invoice_details';
             $.ajax({
-                url:"hamper_creation_action.php",
+                url:"actions/hamper_creation_action.php",
                 method:"POST",
                 data:{hamper_id:hamper_id, btn_action:btn_action},
                 success:function(data)

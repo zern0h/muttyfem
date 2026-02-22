@@ -214,7 +214,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"suppliers_action.php",
+                    url:"actions/suppliers_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -267,7 +267,7 @@
                 }
                 else{    
                     $.ajax({
-                        url:"suppliers_action.php",
+                        url:"actions/suppliers_action.php",
                         method:"POST",
                         data:{supplierName:supplierName, supplierMail:supplierMail, phoneNumber1:phoneNumber1, phoneNumber2:phoneNumber2,supplierAddress1:supplierAddress1, supplierAddress2:supplierAddress2, supplierCity:supplierCity, supplierState:supplierState, supplierEnteredBy:supplierEnteredBy,btn_action:btn_action},
                         dataType:"JSON",
@@ -299,7 +299,7 @@
                 }
                 else{    
                     $.ajax({
-                        url:"suppliers_action.php",
+                        url:"actions/suppliers_action.php",
                         method:"POST",
                         data:{supplierName:supplierName, supplierMail:supplierMail, phoneNumber1:phoneNumber1, phoneNumber2:phoneNumber2,supplierAddress1:supplierAddress1, supplierAddress2:supplierAddress2, supplierCity:supplierCity, supplierState:supplierState, supplierId:supplierId,btn_action:btn_action},
                         dataType:"JSON",
@@ -338,7 +338,7 @@
             let supplier_id = $(this).attr("id");
             let btn_action = 'fetch_single';
             $.ajax({
-                url:"suppliers_action.php",
+                url:"actions/suppliers_action.php",
                 method:"POST",
                 data:{supplier_id:supplier_id, btn_action:btn_action},
                 dataType:"json",
@@ -375,7 +375,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"suppliers_action.php",
+                        url:"actions/suppliers_action.php",
                         method:"POST",
                         data:{supplier_id:supplier_id, supplier_status:supplier_status, btn_action:btn_action},
                         dataType: "JSON",
@@ -405,7 +405,7 @@
             let supplierId = $(this).attr("id");
             let btn_action = 'supplier_details';
             $.ajax({
-                url:"suppliers_action.php",
+                url:"actions/suppliers_action.php",
                 method:"POST",
                 data:{supplierId:supplierId, btn_action:btn_action},
                 success:function(data)

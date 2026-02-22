@@ -150,7 +150,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"stock_product_action.php",
+                    url:"actions/stock_product_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -184,7 +184,7 @@
             let cat_id = $('#category').val();
             let  btn_action = 'load_sub_cat';
             $.ajax({
-                url: "stock_product_action.php",
+                url: "actions/stock_product_action.php",
                 method: "POST",
                 data:{btn_action:btn_action, cat_id:cat_id},
                 success:function(data){
@@ -215,7 +215,7 @@
                 }
                 else{    
                     $.ajax({
-                        url:"stock_product_action.php",
+                        url:"actions/stock_product_action.php",
                         method:"POST",
                         data:{product_name:product_name, product_unit:product_unit, category_id:category_id, sub_cat_id:sub_cat_id, brand_id:brand_id, product_entered_by:product_entered_by, btn_action:btn_action},
                         dataType:"JSON",
@@ -248,7 +248,7 @@
                 else{
                     
                     $.ajax({
-                        url:"stock_product_action.php",
+                        url:"actions/stock_product_action.php",
                         method:"POST",
                         data:{product_name:product_name, product_unit:product_unit, category_id:category_id, sub_cat_id:sub_cat_id,brand_id:brand_id,  product_id:product_id, btn_action:btn_action},
                         dataType:"JSON",
@@ -288,7 +288,7 @@
            
             let btn_action = 'fetch_single';
             $.ajax({
-                url:"stock_product_action.php",
+                url:"actions/stock_product_action.php",
                 method:"POST",
                 data:{stock_product_id:stock_product_id, btn_action:btn_action},
                 dataType:"json",
@@ -320,7 +320,7 @@
                 .then((willDelete) => {
                 if (willDelete) {
                     $.ajax({
-                        url:"stock_product_action.php",
+                        url:"actions/stock_product_action.php",
                         method:"POST",
                         data:{stock_product_id:stock_product_id, stock_product_status:stock_product_status, btn_action:btn_action},
                         dataType: "JSON",
@@ -350,7 +350,7 @@
             let stock_product_id = $(this).attr("id");
             let btn_action = 'product_details';
             $.ajax({
-                url:"stock_product_action.php",
+                url:"actions/stock_product_action.php",
                 method:"POST",
                 data:{stock_product_id:stock_product_id, btn_action:btn_action},
                 success:function(data)

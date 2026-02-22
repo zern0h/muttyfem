@@ -214,7 +214,7 @@
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"purchase_order_action.php",
+                    url:"actions/purchase_order_action.php",
                     type:"POST",
                     data:{btn_action:btn_action}
                 },
@@ -267,7 +267,7 @@
             let purchase_order_id = $(this).attr("id");           
             let btn_action = 'purchase_order_details';
             $.ajax({
-                url:"purchase_order_action.php",
+                url:"actions/purchase_order_action.php",
                 method:"POST",
                 data:{purchase_order_id:purchase_order_id, btn_action:btn_action},
                 success:function(data)
@@ -284,7 +284,7 @@
 			$('#action').attr('disabled', 'disabled');
 			var form_data = $(this).serialize();
 			$.ajax({
-				url:"purchase_order_action.php",
+				url:"actions/purchase_order_action.php",
 				method:"POST",
 				data:form_data,
                 dataType:"JSON",
@@ -317,7 +317,7 @@
         function fetchVendorProduct(supplier_number){
             let btn_action = 'fetch_supplier_products';
             $.ajax({
-                url: "purchase_order_action.php",
+                url: "actions/purchase_order_action.php",
                 method: "POST",
                 data: {supplier_number:supplier_number,btn_action:btn_action},
                 success:function(data){

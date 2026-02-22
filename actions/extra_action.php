@@ -1,6 +1,6 @@
 <?php
-include 'includes/DB.php';
-include 'includes/Query.php';
+include '../includes/DB.php';
+include '../includes/Query.php';
 
 $Qobject = new Query;
 

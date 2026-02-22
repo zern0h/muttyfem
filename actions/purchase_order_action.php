@@ -1,6 +1,6 @@
 <?php
-include 'includes/DB.php';
-include 'includes/Query.php';
+include '../includes/DB.php';
+include '../includes/Query.php';
 
 $Qobject = new Query;
 
@@ -335,7 +335,7 @@ if(isset($_POST['btn_action']))
 
       $sub_array[] = '<button name="view" id="'.$row["po_overview_id"].'" class="btn btn-xs btn-success view" >View <i class="fas fa-eye"></i></button>';
 
-      $sub_array[] = '<a href="printPurchaseOrder.php?orderNum='.$row["po_overview_id"].'" target="_blank" class="btn btn-info ">PDF <i class="fas fa-file-pdf"></a>';
+      $sub_array[] = '<a href="../printPurchaseOrder.php?orderNum='.$row["po_overview_id"].'" target="_blank" class="btn btn-info ">PDF <i class="fas fa-file-pdf"></a>';
       
          	
     	$data[] = $sub_array;

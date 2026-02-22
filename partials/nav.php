@@ -20,6 +20,12 @@
             </a>
         </li>
 
+        <li class="nav-item">
+            <a href="logout.php" class="nav-link" title="Logout">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </li>
+
         <li class="nav-item avt-wrapper">
             <div class="avt dropdown">
                 <img src="images/user.png" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
