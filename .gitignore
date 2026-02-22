@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local config
+.claude/
+
+# Database dumps
+database/
+
+# Error logs
+error_log
+*.log
+
+# PDF libraries (large, installable)
+dompdf/
+fpdf/
+tcpdf/
+
+# Fonts
+font/
+
+# Uploaded images
+images/
+
+# Test file
+test.php
