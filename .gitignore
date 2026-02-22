@@ -25,3 +25,6 @@ images/
 
 # Test file
 test.php
+
+# Dead/duplicate code (unused, contains vulnerable old JS libraries)
+partials/admin/
